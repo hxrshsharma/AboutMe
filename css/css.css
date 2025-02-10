@@ -1,0 +1,388 @@
+.parallax-1 {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+#myVideo {
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -999;
+}
+
+.name {
+  background-color: #031a1b8f;
+  box-shadow: 0 0 10px 0 black;
+  color: white;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 300px;
+  width: 350px;
+  min-height: 32px;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+h2 {
+  color: orange;
+}
+.parallax-2 {
+  width: 100%;
+  height: 500px;
+  background: url("https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.para-1 {
+  text-align: center;
+  padding: 50px;
+  background-color: #0c1e23;
+  color: white;
+  font-size: 17px;
+  box-shadow: 0 0 10px 0 black;
+}
+
+.container {
+  min-height: 500px;
+  min-width: 100%;
+  background-color: #0c1e23;
+  padding: 10px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-4 {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-4::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #bbb;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-4 {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-4::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -11px;
+  background-color: #bbb;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.card {
+  color: white;
+  padding: 10px;
+  min-height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0 rgb(28, 28, 28);
+}
+
+.card:hover {
+  box-shadow: 0 0 15px 0 white;
+}
+
+.card p {
+  font-size: large;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 2px;
+}
+
+a:hover {
+  color: white;
+}
+
+/* Place the container to the left */
+.left-4 {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* Place the container to the right */
+.right-4 {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-4::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #3a7c90;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #3a7c90;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-4::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #3a7c90;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #3a7c90 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-4::after {
+  left: -14px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .main-timeline-4::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-4 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-4::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left-4::after,
+  .right-4::after {
+    left: 18px;
+  }
+
+  .left-4::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right-4 {
+    left: 0%;
+  }
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #325c66;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #284750, #3a7c90);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #284750, #3a7c90);
+}
+
+.gradient-custom-4 {
+  /* fallback for old browsers */
+  background: #325c66;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to left, #284750, #3a7c90);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, #284750, #3a7c90);
+}
+
+/* -------------------------------------------- Skills -------------------------------------------- */
+
+.ds-skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 11px;
+}
+
+.ds-skills-list li {
+  display: inline-block;
+  color: #090909;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 14px;
+  margin-right: 14px;
+  margin-bottom: 18px;
+  font-weight: 700;
+  background-color: #95a7ad;
+}
+
+.ds-skills-list li:hover {
+  background-color: #3a7c90;
+  color: white;
+}
+
+.edu {
+  height: 550px;
+}
+
+/* -------------------------------------------- Projects -------------------------------------------- */
+.projects {
+  min-height: 540px;
+  padding: 65px 0px 30px 0px;
+  background-color: #0c1e23;
+}
+
+.carousel {
+  height: 450px;
+}
+
+.carousel-cell {
+  width: 20%;
+  height: 200px;
+  margin-right: 10%;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-cell div h3 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.carousel-cell div span {
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.carousel-cell div p {
+  text-align: center;
+  color: #788e9c;
+}
+
+.carousel-cell a{
+  margin-top: 20px;
+  border: 1px solid orange;
+  color: orange;
+}
+
+.carousel-cell div {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  opacity: 0.5;
+  -webkit-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s,
+    -webkit-filter 0.3s, filter 0.3s;
+  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.carousel-cell.is-selected div {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-filter: none;
+  filter: none;
+}
+
+.carousel-cell.is-selected {
+  box-shadow: orange 0px 0px 20px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-cell {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .carousel-cell {
+    width: 30%;
+  }
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* closer to edge */
+.flickity-prev-next-button.previous {
+  left: 0;
+}
+.flickity-prev-next-button.next {
+  right: 0;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 0px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: orange;
+  border: orange;
+}
